@@ -1,8 +1,7 @@
-@(document).on("ready", function(){
-	$(.js-track-input)on("click", function (){
-
+$(document).on("ready", function(){
+	$(".js-track-input").on("click", function () {
 	$.ajax({
-		url: "htps://api.spotify.com/v1/search?type=track" ,
+		url: "https://api.spotify.com/v1/search" ,
 
 		success: function(theData) {
 			console.log("HELLA WORKED");
@@ -11,15 +10,15 @@
 		}
 
 	})
-		error: function(error){
-			console.log("ES NO WORKY")
-		}
+		// error: function(error) {
+		// 	console.log("ES NO WORKY")
+		// }
 
 
 })
 })
 
 
-function onArtistFindSuccess(artistResponse) {
-	$(".track-list").empty()
-}
+// function onArtistFindSuccess(artistResponse) {
+// 	$(".track-list").empty()
+// }
